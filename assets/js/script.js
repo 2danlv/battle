@@ -10,4 +10,25 @@ jQuery(document).ready(function($) {
         }
             //parent_item.find('.c-group-content').slideToggle(800);
         });
+    var brandSlider = $('.hero .owl-carousel');
+        brandSlider.owlCarousel({
+          center: true,
+          loop: true,
+          items: 3,
+           smartSpeed: 500,
+           nav: true,
+           mouseDrag: false,
+           touchDrag: false,
+           navText: [$(''),$('')]
+      });
+        var brandSlider = $('.partner-list .owl-carousel');
+        brandSlider.owlCarousel({
+          loop: true,
+          items: 6,
+          smartSpeed: 300,
+          nav: false,
+          dot: true,
+          mouseDrag: false,
+          touchDrag: false,
+      });
 });

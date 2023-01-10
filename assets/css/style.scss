@@ -197,11 +197,81 @@ body {
 }
 .hero {
     background: url(../images/bg-3.png) bottom  center no-repeat;
-    padding-top: 14%;
+    padding-top: 10%;
     background-size: 70% auto;
     &-list {
-        max-width: 60%;
+        max-width: 800px;
+        height: 800px;
         margin: 0 auto;
+
+        .owl-item > div {
+            margin: 0 15%;
+            padding-top: 5px;
+            transition: all 0.5s ease;
+            text-align: center;
+        }
+        .owl-carousel {
+            height: 800px;
+            position: relative;
+
+            .owl-item {
+                img {
+                    width: auto;
+                    max-width: 100%;
+                    display: inline-block;
+                }
+                .name {
+                    opacity: 0;
+                    transition: 0.5s;
+
+                    img {
+                        max-height: 25px;
+                    }
+                }
+                &.active div {
+                    padding-top: 30px;
+                    margin: 0 10%;
+                }
+                &.center > div {
+                    padding-top: 50px;
+                    margin: 0;
+
+                    .name {
+                        opacity: 1;
+
+                        img {
+                            max-height: 33px;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+        .owl-item:not(.center) > div:hover, .owl-item:not(.center) > div:hover .name {
+            opacity: .75;
+            transition: 0.5s;
+        }
+        .owl-nav {
+            position: absolute;
+            top: 35%;
+            width: 120%;
+            left: -10%;
+            visibility: hidden;
+            display: flex;
+                button.owl-prev,button.owl-next {
+                    visibility: visible;
+                    width: 66px;
+                    height: 114px;
+                    background: url(../images/btn-left) center no-repeat;
+                }
+                button.owl-next {
+                    background: url(../images/btn-right) center no-repeat;
+                    margin-right: 0;
+                    margin-left: auto;
+                }
+            
+            
+        }
     }
 }
 .road-map{
@@ -312,7 +382,23 @@ body {
         z-index: 1;
     }
     .partner-list {
-        width: 58%;
+        width: 80%;
         margin: 0 auto;
+        .owl-dots {
+          text-align: center;
+      }
+      .owl-dots button.owl-dot.active , 
+      .owl-dots button.owl-dot:hover  {
+          background: url(../images/partner/btn-1.png) no-repeat;
+          
+      }
+      .owl-dots button.owl-dot{
+          background: url(../images/partner/btn-2.png) no-repeat;
+          height: 32px;
+          width: 32px;
+          margin: 0 5px; 
+          border: none;
+      }
+      
     }
 }
