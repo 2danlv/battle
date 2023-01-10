@@ -61,7 +61,8 @@ body { font-family: 'Quattrocento Roman'; font-size: 14px; line-height: 18px; ma
 .hero-list .owl-carousel .owl-item.center > div .name img { max-height: 33px; width: auto; }
 .hero-list .owl-item > div:hover, .hero-list .owl-item.center > div:hover, .hero-list .owl-item:not(.center) > div:hover .name { opacity: 1; transition: 0.5s; }
 .hero-list .owl-nav { position: absolute; top: 35%; width: 120%; left: -10%; visibility: hidden; display: flex; }
-.hero-list .owl-nav button.owl-prev, .hero-list .owl-nav button.owl-next { visibility: visible; width: 66px; height: 114px; background: url(../images/btn-left.png) center no-repeat; }
+.hero-list .owl-nav button.owl-prev, .hero-list .owl-nav button.owl-next { visibility: visible; width: 66px; height: 114px; background: url(../images/btn-left.png) center no-repeat; opacity: 0.65; transition: 0.2s; }
+.hero-list .owl-nav button.owl-prev:hover, .hero-list .owl-nav button.owl-next:hover { opacity: 1; transition: 0.2s; }
 .hero-list .owl-nav button.owl-next { background: url(../images/btn-right.png) center no-repeat; margin-right: 0; margin-left: auto; }
 
 .road-map { width: 88%; padding-top: 3%; margin: 0 auto; }
@@ -88,5 +89,5 @@ body { font-family: 'Quattrocento Roman'; font-size: 14px; line-height: 18px; ma
 .partner .c-ttl { padding-top: 16%; width: 45%; margin: 0 auto; padding-bottom: 6.3%; position: relative; z-index: 1; }
 .partner .partner-list { width: 80%; margin: 0 auto; }
 .partner .partner-list .owl-dots { text-align: center; padding-top: 50px; }
-.partner .partner-list .owl-dots button.owl-dot.active, .partner .partner-list .owl-dots button.owl-dot:hover { background: url(../images/partner/btn-1.png) no-repeat; }
-.partner .partner-list .owl-dots button.owl-dot { background: url(../images/partner/btn-2.png) no-repeat; height: 32px; width: 32px; margin: 0 5px; border: none; }
+.partner .partner-list .owl-dots button.owl-dot.active, .partner .partner-list .owl-dots button.owl-dot:hover { background: url(../images/partner/btn-1.png) center no-repeat; opacity: 1; transition: 0.2s; }
+.partner .partner-list .owl-dots button.owl-dot { background: url(../images/partner/btn-2.png) center no-repeat; height: 32px; width: 32px; margin: 0 5px; border: none; opacity: 0.6; transition: 0.2s; }
