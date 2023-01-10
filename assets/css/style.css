@@ -32,8 +32,8 @@ body { font-family: 'Quattrocento Roman'; font-size: 14px; line-height: 18px; ma
 .kv-btn .btn.btn1 { margin-left: -21px; }
 .kv-download { padding-top: 8px; padding-bottom: 35px; }
 .kv-download .c-txt img { max-width: 274px; }
-.kv-download ul { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; width: 80%; margin: 12px auto 16px; }
-.kv-download ul li { width: 24%; }
+.kv-download ul { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; width: 90%; margin: 12px auto 16px; }
+.kv-download ul li { width: 25%; }
 .kv-download .btn-down img { width: 60px; }
 
 .about { background: url(../images/bg-2.png) bottom center no-repeat; background-size: 100% auto; position: relative; color: #fff; padding-top: 5.3%; }
