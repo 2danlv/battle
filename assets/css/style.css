@@ -87,6 +87,6 @@ body { font-family: 'Quattrocento Roman'; font-size: 14px; line-height: 18px; ma
 .partner { padding-bottom: 11%; }
 .partner .c-ttl { padding-top: 16%; width: 45%; margin: 0 auto; padding-bottom: 6.3%; position: relative; z-index: 1; }
 .partner .partner-list { width: 80%; margin: 0 auto; }
-.partner .partner-list .owl-dots { text-align: center; }
+.partner .partner-list .owl-dots { text-align: center; padding-top: 50px; }
 .partner .partner-list .owl-dots button.owl-dot.active, .partner .partner-list .owl-dots button.owl-dot:hover { background: url(../images/partner/btn-1.png) no-repeat; }
 .partner .partner-list .owl-dots button.owl-dot { background: url(../images/partner/btn-2.png) no-repeat; height: 32px; width: 32px; margin: 0 5px; border: none; }
