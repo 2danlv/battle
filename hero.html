@@ -12,7 +12,7 @@
         brandSlider.owlCarousel({
           center: true,
           loop: true,
-          items: 5,
+          items: 3,
            smartSpeed: 500,
            nav: true,
            mouseDrag: false,
@@ -20,23 +20,18 @@
            navText: [$('.am-next'),$('.am-prev')]
       });
 
-        $(document).on('click', '.owl-item>div', function() {
-  // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
-  var $speed = 300;  // in ms
-  $owl.trigger('to.owl.carousel', [$(this).data( 'position' ), $speed] );
-  
-});
+       
         function brandSliderClasses() {
           brandSlider.each(function() {
             var total = $(this).find('.owl-item.active').length;
             $(this).find('.owl-item').removeClass('firstactiveitem');
             $(this).find('.owl-item').removeClass('lastactiveitem');
             $(this).find('.owl-item.active').each(function(index) {
-              if (index === 1) {
+              if (index === 0) {
                 $(this).addClass('firstactiveitem');
                 //$(this).removeClass('active');
               }
-              if (index === total - 2 && total > 2) {
+              if (index === total - 1 && total > 1) {
                 $(this).addClass('lastactiveitem');
                 //$(this).removeClass('active');
               }
@@ -57,7 +52,7 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <style>
     .container {
-        width: 70vw;
+        width: 50vw;
         margin: 0 auto;
     }
     .owl-item > div {
@@ -67,11 +62,14 @@
       transition: all 0.5s ease;
   }
   
-  .owl-item.firstactiveitem div, .owl-item.lastactiveitem div {
-     padding-top: 50px;
-      margin: 0 6%;
+  /*.owl-item.active.firstactiveitem div, .owl-item.active.lastactiveitem div {
+     padding-top: 0px !important;
+      margin: 0 15% !important;
+  }*/
+   .owl-item.active div{
+    padding-top: 30px;
+    margin: 0 10%;
   }
-   
   .owl-item.center > div {
     padding-top: 50px;
       cursor: auto;
