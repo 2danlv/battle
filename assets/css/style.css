@@ -50,16 +50,16 @@ body { font-family: 'Quattrocento Roman'; font-size: 14px; line-height: 18px; ma
 
 .hero { background: url(../images/bg-3.png) bottom center no-repeat; padding-top: 10%; background-size: 70% auto; }
 .hero-list { max-width: 800px; height: 800px; margin: 0 auto; }
-.hero-list .owl-item > div { margin: 0 15%; padding-top: 5px; transition: all 0.5s ease; text-align: center; }
+.hero-list .owl-item > div { margin: 0 15%; padding-top: 5px; opacity: .65; transition: all 0.5s ease; text-align: center; }
 .hero-list .owl-carousel { height: 800px; position: relative; }
 .hero-list .owl-carousel .owl-item img { width: auto; max-width: 100%; display: inline-block; }
 .hero-list .owl-carousel .owl-item .name { opacity: 0; transition: 0.5s; }
 .hero-list .owl-carousel .owl-item .name img { max-height: 25px; }
 .hero-list .owl-carousel .owl-item.active div { padding-top: 30px; margin: 0 10%; }
-.hero-list .owl-carousel .owl-item.center > div { padding-top: 50px; margin: 0; }
+.hero-list .owl-carousel .owl-item.center > div { padding-top: 50px; margin: 0; opacity: 0.9; }
 .hero-list .owl-carousel .owl-item.center > div .name { opacity: 1; }
 .hero-list .owl-carousel .owl-item.center > div .name img { max-height: 33px; width: auto; }
-.hero-list .owl-item:not(.center) > div:hover, .hero-list .owl-item:not(.center) > div:hover .name { opacity: .75; transition: 0.5s; }
+.hero-list .owl-item > div:hover, .hero-list .owl-item.center > div:hover, .hero-list .owl-item:not(.center) > div:hover .name { opacity: 1; transition: 0.5s; }
 .hero-list .owl-nav { position: absolute; top: 35%; width: 120%; left: -10%; visibility: hidden; display: flex; }
 .hero-list .owl-nav button.owl-prev, .hero-list .owl-nav button.owl-next { visibility: visible; width: 66px; height: 114px; background: url(../images/btn-left.png) center no-repeat; }
 .hero-list .owl-nav button.owl-next { background: url(../images/btn-right.png) center no-repeat; margin-right: 0; margin-left: auto; }
