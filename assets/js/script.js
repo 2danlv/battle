@@ -10,8 +10,8 @@ jQuery(document).ready(function($) {
         }
             //parent_item.find('.c-group-content').slideToggle(800);
         });
-    var brandSlider = $('.hero .owl-carousel');
-        brandSlider.owlCarousel({
+    var hero_Slider = $('.hero .owl-carousel');
+        hero_Slider.owlCarousel({
           center: true,
           loop: true,
           autoplay:true,
@@ -27,8 +27,8 @@ jQuery(document).ready(function($) {
             }
           }
       });
-        var brandSlider = $('.partner-list .owl-carousel');
-        brandSlider.owlCarousel({
+        var partner_Slider = $('.partner-list .owl-carousel');
+        partner_Slider.owlCarousel({
           loop: true,
           items: 6,
           autoplay:true,
