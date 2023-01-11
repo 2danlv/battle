@@ -66,6 +66,9 @@ body {
     font-size: 14px;
     line-height: 18px;
     margin: 0 auto;
+    
+}
+.wrapper {
     background: url(../images/bg-body.jpg) top center no-repeat;
     background-size: cover;
 }
@@ -111,10 +114,10 @@ body {
             align-items: center;
             flex-wrap :wrap;
             justify-content: space-between;
-            width: 80%;
+            width: 90%;
             margin: 12px auto 16px;
             li {
-                width: 24%;
+                width: 25%;
                 img {
                     
                 }
@@ -161,7 +164,6 @@ body {
             padding: 16% 9% 9% 14%;
             background-size: cover;
             margin-top: -63px;
-            min-height: 65vh;
             p {
                  margin-top: 0;
                  margin-bottom: 20px;
@@ -207,6 +209,7 @@ body {
         .owl-item > div {
             margin: 0 15%;
             padding-top: 5px;
+            opacity: .65;
             transition: all 0.5s ease;
             text-align: center;
         }
@@ -235,7 +238,7 @@ body {
                 &.center > div {
                     padding-top: 50px;
                     margin: 0;
-
+                    opacity: 0.9;
                     .name {
                         opacity: 1;
 
@@ -247,32 +250,40 @@ body {
                 }
             }
         }
-        .owl-item:not(.center) > div:hover, .owl-item:not(.center) > div:hover .name {
-            opacity: .75;
+        .owl-item > div:hover, .owl-item.center > div:hover, .owl-item:not(.center) > div:hover .name {
+            opacity: 1;
             transition: 0.5s;
         }
-        .owl-nav {
-            position: absolute;
-            top: 35%;
-            width: 120%;
-            left: -10%;
-            visibility: hidden;
-            display: flex;
-                button.owl-prev,button.owl-next {
-                    visibility: visible;
-                    width: 66px;
-                    height: 114px;
-                    background: url(../images/btn-left) center no-repeat;
-                }
-                button.owl-next {
-                    background: url(../images/btn-right) center no-repeat;
-                    margin-right: 0;
-                    margin-left: auto;
-                }
-            
-            
+        
+    }
+}
+.owl-carousel .owl-nav {
+    position: absolute;
+    top: 35%;
+    width: 120%;
+    left: -10%;
+    visibility: hidden;
+    display: flex;
+    button.owl-prev,button.owl-next {
+        visibility: visible;
+        width: 46px;
+        height: 114px;
+        background: url(../images/btn-left.png) center no-repeat;
+        background-size: 100% auto;
+        opacity: 0.65;
+        transition: 0.2s;
+        &:hover {
+            opacity: 1;
+            transition: 0.2s;
         }
     }
+    button.owl-next {
+        background-image: url(../images/btn-right.png);
+        margin-right: 0;
+        margin-left: auto;
+    }
+    
+    
 }
 .road-map{
     width: 88%;
@@ -386,19 +397,127 @@ body {
         margin: 0 auto;
         .owl-dots {
           text-align: center;
+          padding-top: 50px;
       }
       .owl-dots button.owl-dot.active , 
       .owl-dots button.owl-dot:hover  {
-          background: url(../images/partner/btn-1.png) no-repeat;
-          
+          background: url(../images/partner/btn-1.png) center no-repeat;
+          opacity: 1;
+          transition: 0.2s;
       }
       .owl-dots button.owl-dot{
-          background: url(../images/partner/btn-2.png) no-repeat;
+          background: url(../images/partner/btn-2.png) center no-repeat;
           height: 32px;
           width: 32px;
           margin: 0 5px; 
           border: none;
+          opacity: 0.6;
+          transition: 0.2s;
       }
       
     }
+}
+@media (min-width: 641px) {
+    .wrapper {
+        min-width: 1200px;
+    }
+}
+@media (max-width: 640px) {
+    .wrapper {
+        
+    }
+    .kv {
+        display: block;
+        height: auto;
+        &-group {
+            padding-top: 5vh;
+        }
+        &-btn {
+            padding-top: 0;
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            .btn {
+                width: 100%;
+                margin: 0 auto;
+                &.btn-1 {
+                    margin-left: -6.3%;
+                }
+            }
+        }
+        &-logo {
+            height: auto;
+        }
+        &-download ul li {
+            width: 50%;
+        }
+    }
+   .about {
+    padding: 5vh 15px 0;
+    background: none;
+    &-img {
+        display: none;
+    }
+    .c-ttl img {
+        width: 150px;
+    }
+    &-doc {
+        width: 100%;
+        .c-content {
+            padding-bottom: 14%;
+        }
+    }
+    &-rock {
+        margin-top: -20%;
+        width: 100%;
+        position: relative;
+        img {
+            width: 77vw;
+            margin-right: -15px;
+        }
+    } 
+    
+   }
+   .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+    width: 30px;
+   }
+   .hero {
+     background-position: center;
+     background-size: 100% auto;
+     padding: 15% 0;
+   }
+   .hero-list {
+    max-width: 80%;
+    height: auto;
+    .owl-carousel {
+        height: 450px;
+    }
+   }
+   .qa {
+    padding: 0 15px;
+    width: 100%;
+    .qa-list {
+        width: 100%;
+    }
+    .btn-more img {
+        width: 40%  ;
+    }
+    &-rock , .c-img{
+        display: none;
+    }
+   }
+   .partner {
+       .c-ttl {
+        width: 70%;
+    }
+    .owl-carousel .owl-item {
+        div {
+            text-align: center;
+        }
+        img {
+            width: auto;
+            display: inline-block;
+        }
+    }
+   } 
 }

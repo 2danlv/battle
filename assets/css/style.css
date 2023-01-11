@@ -22,7 +22,9 @@ ul { list-style-type: none; padding: 0; }
 .txt-l { text-align: left; }
 
 @font-face { font-family: 'Quattrocento Roman'; src: url(../fonts/QuattrocentoRoman.otf); src: url(../fonts/QuattrocentoRoman.ttf), url(../fonts/QuattrocentoRoman.eot?#iefix); }
-body { font-family: 'Quattrocento Roman'; font-size: 14px; line-height: 18px; margin: 0 auto; background: url(../images/bg-body.jpg) top center no-repeat; background-size: cover; }
+body { font-family: 'Quattrocento Roman'; font-size: 14px; line-height: 18px; margin: 0 auto; }
+
+.wrapper { background: url(../images/bg-body.jpg) top center no-repeat; background-size: cover; }
 
 .kv { position: relative; margin: 0 auto; background: url(../images/bg-kv.jpg) bottom center no-repeat; background-size: cover; height: 100vh; display: flex; align-items: center; }
 .kv-group { max-width: 790px; padding-top: 19px; margin: 0 auto; }
@@ -60,10 +62,11 @@ body { font-family: 'Quattrocento Roman'; font-size: 14px; line-height: 18px; ma
 .hero-list .owl-carousel .owl-item.center > div .name { opacity: 1; }
 .hero-list .owl-carousel .owl-item.center > div .name img { max-height: 33px; width: auto; }
 .hero-list .owl-item > div:hover, .hero-list .owl-item.center > div:hover, .hero-list .owl-item:not(.center) > div:hover .name { opacity: 1; transition: 0.5s; }
-.hero-list .owl-nav { position: absolute; top: 35%; width: 120%; left: -10%; visibility: hidden; display: flex; }
-.hero-list .owl-nav button.owl-prev, .hero-list .owl-nav button.owl-next { visibility: visible; width: 46px; height: 114px; background: url(../images/btn-left.png) center no-repeat; background-size: 100% auto; opacity: 0.65; transition: 0.2s; }
-.hero-list .owl-nav button.owl-prev:hover, .hero-list .owl-nav button.owl-next:hover { opacity: 1; transition: 0.2s; }
-.hero-list .owl-nav button.owl-next { background-image: url(../images/btn-right.png); margin-right: 0; margin-left: auto; }
+
+.owl-carousel .owl-nav { position: absolute; top: 35%; width: 120%; left: -10%; visibility: hidden; display: flex; }
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next { visibility: visible; width: 46px; height: 114px; background: url(../images/btn-left.png) center no-repeat; background-size: 100% auto; opacity: 0.65; transition: 0.2s; }
+.owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover { opacity: 1; transition: 0.2s; }
+.owl-carousel .owl-nav button.owl-next { background-image: url(../images/btn-right.png); margin-right: 0; margin-left: auto; }
 
 .road-map { width: 88%; padding-top: 3%; margin: 0 auto; }
 .road-map .c-img { padding-left: 10%; }
@@ -91,3 +94,30 @@ body { font-family: 'Quattrocento Roman'; font-size: 14px; line-height: 18px; ma
 .partner .partner-list .owl-dots { text-align: center; padding-top: 50px; }
 .partner .partner-list .owl-dots button.owl-dot.active, .partner .partner-list .owl-dots button.owl-dot:hover { background: url(../images/partner/btn-1.png) center no-repeat; opacity: 1; transition: 0.2s; }
 .partner .partner-list .owl-dots button.owl-dot { background: url(../images/partner/btn-2.png) center no-repeat; height: 32px; width: 32px; margin: 0 5px; border: none; opacity: 0.6; transition: 0.2s; }
+
+@media (min-width: 641px) { .wrapper { min-width: 1200px; } }
+@media (max-width: 640px) { .kv { display: block; height: auto; }
+  .kv-group { padding-top: 5vh; }
+  .kv-btn { padding-top: 0; display: block; width: 80%; margin: 0 auto; }
+  .kv-btn .btn { width: 100%; margin: 0 auto; }
+  .kv-btn .btn.btn-1 { margin-left: -6.3%; }
+  .kv-logo { height: auto; }
+  .kv-download ul li { width: 50%; }
+  .about { padding: 5vh 15px 0; background: none; }
+  .about-img { display: none; }
+  .about .c-ttl img { width: 150px; }
+  .about-doc { width: 100%; }
+  .about-doc .c-content { padding-bottom: 14%; }
+  .about-rock { margin-top: -20%; width: 100%; position: relative; }
+  .about-rock img { width: 77vw; margin-right: -15px; }
+  .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next { width: 30px; }
+  .hero { background-position: center; background-size: 100% auto; padding: 15% 0; }
+  .hero-list { max-width: 80%; height: auto; }
+  .hero-list .owl-carousel { height: 450px; }
+  .qa { padding: 0 15px; width: 100%; }
+  .qa .qa-list { width: 100%; }
+  .qa .btn-more img { width: 40%; }
+  .qa-rock, .qa .c-img { display: none; }
+  .partner .c-ttl { width: 70%; }
+  .partner .owl-carousel .owl-item div { text-align: center; }
+  .partner .owl-carousel .owl-item img { width: auto; display: inline-block; } }
