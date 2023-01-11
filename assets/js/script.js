@@ -42,7 +42,8 @@ jQuery(document).ready(function($) {
     0 : {
       items: 2,
       nav: true,
-      dots: false
+      dots: false,
+      touchDrag: true,
     },
     // breakpoint from 480 up
     480 : {
