@@ -20,7 +20,12 @@ jQuery(document).ready(function($) {
            nav: true,
            mouseDrag: false,
            touchDrag: false,
-           navText: [$(''),$('')]
+           navText: [$(''),$('')],
+           responsive : {
+            0 : {
+               touchDrag: true,
+            }
+          }
       });
         var brandSlider = $('.partner-list .owl-carousel');
         brandSlider.owlCarousel({
@@ -43,7 +48,8 @@ jQuery(document).ready(function($) {
     480 : {
       items: 3,
       nav: true,
-      dots: false
+      dots: false,
+      touchDrag: true,
     },
     // breakpoint from 768 up
     768 : {
