@@ -99,10 +99,11 @@ body { font-family: 'Quattrocento Roman'; font-size: 14px; line-height: 18px; ma
 @media (max-width: 640px) { body { line-height: 20px; }
   .kv { display: block; height: auto; }
   .kv-group { padding-top: 5vh; }
-  .kv-btn { padding-top: 0; display: block; width: 80%; margin: 0 auto; }
+  .kv-btn { padding-top: 0; display: block; width: 80%; margin: -10% auto 0; }
   .kv-btn .btn { width: 100%; margin: 0 auto; }
   .kv-btn .btn.btn-1 { margin-left: -6.3%; }
   .kv-logo { height: auto; }
+  .kv-logo img { margin: 0 -20%; max-width: none; width: 120%; }
   .kv-download ul li { width: 50%; }
   .about { padding: 5vh 15px 0; background: none; }
   .about-img { display: none; }
