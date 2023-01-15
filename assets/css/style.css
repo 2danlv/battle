@@ -21,6 +21,12 @@ ul { list-style-type: none; padding: 0; }
 
 .txt-l { text-align: left; }
 
+a { opacity: 1; transition: 0.2s; }
+a:hover { opacity: 0.9; transition: 0.2s; }
+
+@keyframes flickerAnimation { 0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; } }
 @font-face { font-family: 'Quattrocento Roman'; src: url(../fonts/QuattrocentoRoman.otf); src: url(../fonts/QuattrocentoRoman.ttf), url(../fonts/QuattrocentoRoman.eot?#iefix); }
 body { font-family: 'Quattrocento Roman'; font-size: 14px; line-height: normal; margin: 0 auto; }
 
@@ -35,7 +41,7 @@ body { font-family: 'Quattrocento Roman'; font-size: 14px; line-height: normal; 
 .kv-download .c-txt img { width: 376px; }
 .kv-download ul { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; width: 88%; margin: 20px auto 16px; }
 .kv-download ul li { width: 22.4%; }
-.kv-download .btn-down { padding-top: 15px; }
+.kv-download .btn-down { padding-top: 15px; animation: flickerAnimation 2.5s infinite; }
 .kv-download .btn-down img { width: 11%; }
 
 .about { position: relative; }

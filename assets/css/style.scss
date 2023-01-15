@@ -57,6 +57,19 @@ ul {
 }
 .container {
 }
+a {
+    opacity: 1;
+    transition: 0.2s;
+    &:hover {
+        opacity: 0.9;
+        transition: 0.2s;
+    }
+}
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
 @font-face {
     font-family: 'Quattrocento Roman';
     src: url(../fonts/QuattrocentoRoman.otf);
@@ -126,7 +139,7 @@ body {
         }
         .btn-down {
             padding-top: 15px;
-
+            animation: flickerAnimation 2.5s infinite;
             img {
                 width: 11%;
             }
@@ -134,6 +147,7 @@ body {
     }
 }
 .main {
+    
 }
 .about {
      
@@ -277,8 +291,8 @@ body {
          width: 82%;
          margin: 0 auto;
     }
-    .map {
-        
+    .group-map {
+        display: none;
     }
 }
 .qa {
@@ -518,6 +532,7 @@ body {
             display: none;
         }
         .group-map {
+            display: block;
             width: 80%;
             margin: 0 auto;
             padding-top: 1vh;
