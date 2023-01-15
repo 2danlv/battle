@@ -65,6 +65,7 @@ body { font-family: 'Quattrocento Roman'; font-size: 14px; line-height: normal; 
 .road-map .c-ttl { padding-top: 10vh; padding-bottom: 3vh; }
 .road-map .c-ttl img { width: 430px; max-width: 27%; }
 .road-map .map-ttl { max-width: 1312px; width: 82%; margin: 0 auto; }
+.road-map .group-map { display: none; }
 
 .qa { padding-top: 15vh; color: #fff; line-height: 22px; position: relative; }
 .qa .qa-content { width: 67%; margin: 0 auto; }
@@ -115,7 +116,7 @@ body { font-family: 'Quattrocento Roman'; font-size: 14px; line-height: normal; 
   .road-map .c-ttl { padding: 3vh 0 2vh; }
   .road-map .map-ttl { width: 100%; }
   .road-map .c-img.map { display: none; }
-  .road-map .group-map { width: 80%; margin: 0 auto; padding-top: 1vh; }
+  .road-map .group-map { display: block; width: 80%; margin: 0 auto; padding-top: 1vh; }
   .qa { padding: 5vh 15px 0; }
   .qa .qa-content { width: 100%; }
   .qa .c-ttl { padding-bottom: 20px; }
