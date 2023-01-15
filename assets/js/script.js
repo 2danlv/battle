@@ -10,6 +10,18 @@ jQuery(document).ready(function($) {
         }
             //parent_item.find('.c-group-content').slideToggle(800);
         });
+    $('a[href*="#"]').on('click', function(e) {
+            var j_e = $($(this).attr('href'));
+            e.preventDefault();
+            // scroll to position
+            if (j_e.length > 0) {
+                e.preventDefault();
+
+                let pos_ele = j_e.offset().top;
+
+                $('html, body').stop().animate({ scrollTop: pos_ele }, 800);
+            }
+        });
     var hero_Slider = $('.hero .owl-carousel');
         hero_Slider.owlCarousel({
           center: true,
@@ -27,6 +39,23 @@ jQuery(document).ready(function($) {
             }
           }
       });
+        var map_Slider = $('.group-map .owl-carousel');
+        map_Slider.owlCarousel({
+          center: true,
+          loop: true,
+          autoplay:true,
+          items: 1,
+          smartSpeed: 500,
+          nav: true,
+          mouseDrag: false,
+          touchDrag: false,
+          navText: [$(''),$('')],
+          responsive : {
+            0 : {
+             touchDrag: true,
+           }
+         }
+       });
         var partner_Slider = $('.partner-list .owl-carousel');
         partner_Slider.owlCarousel({
           loop: true,
