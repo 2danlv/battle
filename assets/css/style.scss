@@ -80,6 +80,7 @@ body {
     font-size: 15px;
     line-height: normal;
     margin: 0 auto;
+    opacity: 1;
 }
 .wrapper {
     background: url(../images/bg-body.jpg) top center no-repeat;
@@ -481,6 +482,9 @@ body {
             } 
             .btn-down {
                 padding-top: 0;
+                img {
+                    width: 15%;
+                }
             }
         } 
     }
