@@ -24,7 +24,7 @@ ul { list-style-type: none; padding: 0; }
 a { opacity: 1; transition: 0.2s; }
 a:hover { opacity: 0.9; transition: 0.2s; }
 
-@keyframes flickerAnimation { 0% { opacity: 1; }
+@keyframes fadeAnimation { 0% { opacity: 1; }
   50% { opacity: 0; }
   100% { opacity: 1; } }
 @font-face { font-family: 'Quattrocento Roman'; src: url(../fonts/QuattrocentoRoman.otf); src: url(../fonts/QuattrocentoRoman.ttf), url(../fonts/QuattrocentoRoman.eot?#iefix); }
@@ -41,7 +41,7 @@ body { font-family: 'Quattrocento Roman'; font-size: 15px; line-height: normal; 
 .kv-download .c-txt img { width: 376px; }
 .kv-download ul { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; width: 88%; margin: 20px auto 16px; }
 .kv-download ul li { width: 22.4%; }
-.kv-download .btn-down { padding-top: 22px; animation: flickerAnimation 2.5s infinite; }
+.kv-download .btn-down { padding-top: 22px; animation: fadeAnimation 2s infinite; }
 .kv-download .btn-down img { width: 7%; max-width: 72px; }
 
 .about { position: relative; }
@@ -49,9 +49,9 @@ body { font-family: 'Quattrocento Roman'; font-size: 15px; line-height: normal; 
 .about-doc { position: absolute; margin-left: auto; width: 35%; z-index: 1; bottom: 22%; right: 17%; color: #fff; }
 .about-doc .c-ttl { padding-bottom: 20px; }
 .about-doc .c-ttl img { width: 73%; max-width: 487px; }
-.about-doc .c-content { background: url(../images/bg-1.png) center no-repeat; padding: 16% 11% 16% 15%; background-size: 100% 100%; }
+.about-doc .c-content { background: url(../images/bg-1.png) center no-repeat; padding: 10%; background-size: 100% 100%; }
 .about-doc .c-content p { margin-top: 0; margin-bottom: 20px; }
-.about-doc .c-content .c-txt { position: relative; }
+.about-doc .c-content .c-txt { position: relative; padding-left: 10px; }
 .about-doc .c-content .c-txt:before { content: ""; width: 3px; height: 100%; background: url(../images/line-red.png) left top repeat-y; opacity: .65; left: -3%; top: 0; position: absolute; }
 .about-rock { position: absolute; bottom: -12%; right: -45%; width: 100%; text-align: right; z-index: 2; }
 .about-rock img { width: 24vw; }

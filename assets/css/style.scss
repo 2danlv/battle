@@ -65,7 +65,7 @@ a {
         transition: 0.2s;
     }
 }
-@keyframes flickerAnimation {
+@keyframes fadeAnimation {
   0%   { opacity:1; }
   50%  { opacity:0; }
   100% { opacity:1; }
@@ -141,7 +141,7 @@ body {
         }
         .btn-down {
             padding-top: 22px;
-            animation: flickerAnimation 2.5s infinite;
+            animation: fadeAnimation 2s infinite;
             img {
                 width: 7%;
                 max-width: 72px;
@@ -177,7 +177,7 @@ body {
         }
         .c-content {
             background: url(../images/bg-1.png) center no-repeat;
-            padding: 16% 11% 16% 15%;
+            padding: 10%;
             background-size: 100% 100%;
 
             p {
@@ -186,7 +186,7 @@ body {
             }
             .c-txt {
                 position: relative;
-
+                padding-left: 10px;
                 &:before {
                     content: "";
                     width: 3px;
