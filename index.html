@@ -8,7 +8,13 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" id="myCSS" href="">
+    <script>     
+    var microTime = Date.now();   
+    var myVar = "assets/css/style";
+    var myUrl = myVar+'.css' + '?v=' + microTime;
+    myCSS.href= myUrl;
+    </script>
 </head>
 <body>
   <div class="wrapper">
