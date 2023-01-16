@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
         hero_Slider.owlCarousel({
           center: true,
           loop: true,
-          autoplay:true,
+          //autoplay:true,
           items: 3,
            smartSpeed: 500,
            nav: true,

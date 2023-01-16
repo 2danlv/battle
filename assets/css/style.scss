@@ -77,7 +77,7 @@ a {
 }
 body {
     font-family: 'Quattrocento Roman';
-    font-size: 14px;
+    font-size: 15px;
     line-height: normal;
     margin: 0 auto;
 }
@@ -101,7 +101,8 @@ body {
         margin: 0 auto;
     }
     &-logo {
-        max-width: 57.6%;
+        width: 52%;
+        max-width: 541px;
         margin: 0 auto;
     }
     &-btn {
@@ -109,9 +110,10 @@ body {
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
-
+        margin-top: -16px;
         .btn {
-            width: 46.4%;
+            width: 44%;
+            max-width: 457px;
         }
     }
     &-download {
@@ -138,10 +140,11 @@ body {
             }
         }
         .btn-down {
-            padding-top: 15px;
+            padding-top: 22px;
             animation: flickerAnimation 2.5s infinite;
             img {
-                width: 11%;
+                width: 7%;
+                max-width: 72px;
             }
         }
     }
@@ -160,19 +163,21 @@ body {
     &-doc {
         position: absolute;
         margin-left: auto;
-        width: 40%;
+        width: 35%;
         z-index: 1;
-        bottom: 15%;
-        right: 12%;
+        bottom: 22%;
+        right: 17%;
         color: #fff;
         .c-ttl {
+            padding-bottom: 20px;
             img {
-                width: 64%;
+                width: 73%;
+                max-width: 487px;
             }
         }
         .c-content {
             background: url(../images/bg-1.png) center no-repeat;
-            padding: 16% 15% 16% 19%;
+            padding: 16% 11% 16% 15%;
             background-size: 100% 100%;
 
             p {
@@ -197,8 +202,8 @@ body {
     }
     &-rock {
         position: absolute;
-        bottom: 0;
-        right: -24%;
+        bottom: -12%;
+        right: -45%;
         width: 100%;
         text-align: right;
         z-index: 2;
@@ -211,9 +216,9 @@ body {
 .hero {
 
     &-list {
-        max-width: 900px;
+        max-width: 65%;
+        width: 1240px;
         margin: 0 auto;
-        //background: url(../images/bg-3.png) top  center no-repeat;
         background-size: 100% auto;
         position: relative;
         .owl-item > div {
@@ -223,9 +228,10 @@ body {
         }
         .owl-carousel {
             position: absolute;
-            top: 0;
+            top: -11%;
             left: 0;
             height: 100%;
+            padding: 0 60px;
             .owl-item {
                 img {
                     width: auto;
@@ -248,16 +254,18 @@ body {
 }
 .owl-carousel .owl-nav {
     position: absolute;
-    top: 35%;
-    width: 120%;
-    left: -10%;
+    top: 11%;
+    width: 102%;
+    left: -1.5%;
     visibility: hidden;
     display: flex;
-
+    align-items: center;
+    height: 100%;
     button.owl-prev, button.owl-next {
         visibility: visible;
-        width: 46px;
-        height: 114px;
+        width: 55px;
+        max-width: 4.4%;
+        height: 150px;
         background: url(../images/btn-left.png) center no-repeat;
         background-size: 100% auto;
         opacity: 0.65;
@@ -275,20 +283,21 @@ body {
     }
 }
 .road-map {
-    width: 84%;
-    padding-top: 5vh;
+    width: 76%;
+    max-width: 1450px;
+    padding-top: 33vh;
     margin: 0 auto;
     .c-ttl {
-        padding-top: 10vh;
+        padding-top: 33vh;
         padding-bottom: 3vh;
         img {
-            width: 430px;
-            max-width: 27%;
+            width: 406px;
+            max-width: 28%;
         }
     }
     .map-ttl {
-         max-width: 1312px;
-         width: 82%;
+         max-width: 1136px;
+         width: 79%;
          margin: 0 auto;
     }
     .group-map {
@@ -301,22 +310,20 @@ body {
     line-height: 22px;
     position: relative;
     .qa-content {
-        width: 67%;
+        max-width: 902px;
         margin: 0 auto;
     }
     .c-ttl {
        
         img {
-               max-width: 212px;
-               width: 17%;
+               max-width: 200px;
+               width: 22%;
         }
     }
     .c-txt {
         position: relative;
-        font-size: 20px;
-        
         margin-left: 14px;
-        margin-bottom: 28px;
+        margin-bottom: 42px;
 
         &:before {
             content: "";
@@ -351,32 +358,32 @@ body {
         z-index: 4;
 
         .c-expand {
-            margin-bottom: 32px;
+            margin-bottom: 42px;
 
             .c-head {
                 cursor: pointer;
                 text-transform: uppercase;
-                font-size: 22px;
+                font-size: 21px;
                 margin-bottom: 12px;
             }
             .c-content {
                 display: none;
-                font-size: 18px;
             }
         }
         .btn-more {
-            padding-top: 2vh;
             img {
-                width: 36%;
+                width: 53%;
+                max-width: 268px;
                 cursor: pointer;
             }
         }
     }
     &-img {
         position: absolute;
-        bottom: -5%;
-        right: 10%;
-        width: 50%;
+        bottom: -12.9%;
+        right: 4.7%;
+        width: 53.5%;
+        max-width: 1027px;
         text-align: right;
         z-index: 0;
 
@@ -387,17 +394,19 @@ body {
 }
 .partner {
     padding-bottom: 11%;
-
+    padding-top: 17vh;
     .c-ttl {
         padding-top: 10%;
-        width: 45%;
+        width: 38%;
+        max-width: 730px;
         margin: 0 auto;
-        padding-bottom: 6.3%;
+        padding-bottom: 2.3%;
         position: relative;
         z-index: 1;
     }
     .partner-list {
-        width: 80%;
+        width: 60%;
+        max-width: 1152px;
         margin: 0 auto;
 
         .owl-dots {
@@ -489,8 +498,12 @@ body {
             width: 100%;
             position: static;
             .c-content {
-                padding-top: 26%;
-                padding-bottom: 14%;
+                padding: 26px;
+                padding-left: 30px;
+                background-image: url(../images/bg-1_sp.png);
+                .c-txt {
+                    padding-left: 8px;
+                }
             }
         }
         &-rock {
@@ -505,7 +518,7 @@ body {
         }
     }
     .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
-        width: 30px;
+        max-width: 5%;
     }
     .hero {
         background-position: center;
@@ -515,12 +528,15 @@ body {
     .hero-list {
         max-width: 80%;
         height: auto;
+        .owl-carousel {
+            padding: 0 15px;
+        }
     }
     .road-map {
         width: 100%;
-        
+        padding-top: 3vh;
         .c-ttl {
-            padding: 3vh 0 2vh;
+            padding: 10vh 0 0vh;
             img {
                 
             }
@@ -536,6 +552,14 @@ body {
             width: 80%;
             margin: 0 auto;
             padding-top: 1vh;
+            .owl-carousel .owl-nav {
+                top: 0;
+                width: 120%;
+                left: -10%;
+            }
+            .owl-dots {
+                display: none;
+            }
         }
         
     } 
@@ -553,9 +577,12 @@ body {
         }
         .qa-list {
             width: 100%;
-            .c-expand .c-head {
-                font-size: 18px;
-            }
+            .c-expand {
+                margin-bottom: 20px;
+                .c-head {
+                    font-size: 16px;
+                }
+            } 
         }
         .btn-more img {
             width: 50%;
@@ -569,17 +596,25 @@ body {
         }
     }
     .partner {
+        padding-top: 3vh;
         .c-ttl {
             width: 70%;
         }
-        .owl-carousel .owl-item {
-            div {
-                text-align: center;
+        .owl-carousel {
+            .owl-item {
+                div {
+                    text-align: center;
+                }
+                img {
+                    width: auto;
+                    display: inline-block;
+                }
             }
-            img {
-                width: auto;
-                display: inline-block;
-            }
-        }
+           .owl-nav  {
+            top: 0;
+            width: 120%;
+            left: -10%;
+           }
+        } 
     }
 }
