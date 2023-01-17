@@ -28,6 +28,8 @@ a:hover { opacity: 0.9; transition: 0.2s; }
   50% { opacity: 0; }
   100% { opacity: 1; } }
 @font-face { font-family: 'Quattrocento Roman'; src: url(../fonts/QuattrocentoRoman.otf); src: url(../fonts/QuattrocentoRoman.ttf), url(../fonts/QuattrocentoRoman.eot?#iefix); }
+.hide-pc { display: none; }
+
 body { font-family: 'Quattrocento Roman'; font-size: 15px; line-height: normal; margin: 0 auto; opacity: 1; }
 
 .wrapper { background: url(../images/bg-body.jpg) top center no-repeat; background-size: cover; }
@@ -97,7 +99,9 @@ body { font-family: 'Quattrocento Roman'; font-size: 15px; line-height: normal; 
 .partner .partner-list .owl-dots button.owl-dot { background: url(../images/partner/btn-2.png) center no-repeat; height: 32px; width: 32px; margin: 0 5px; border: none; opacity: 0.6; transition: 0.2s; }
 
 @media (min-width: 641px) { .wrapper { min-width: 1200px; } }
-@media (max-width: 640px) { body { line-height: 20px; }
+@media (max-width: 640px) { .hide-sp { display: none; }
+  .hide-pc { display: block; }
+  body { line-height: 20px; }
   .kv { display: block; height: auto; min-height: 0; }
   .kv-logo { max-width: 100%; }
   .kv-group { padding-top: 5vh; }
@@ -110,8 +114,7 @@ body { font-family: 'Quattrocento Roman'; font-size: 15px; line-height: normal; 
   .kv-download .btn-down { padding-top: 0; }
   .kv-download .btn-down img { width: 15%; }
   .about { padding: 5vh 15px 0; background: none; }
-  .about-img { display: none; }
-  .about .c-ttl img { width: 150px; }
+  .about .c-ttl img { width: 200px; }
   .about-doc { width: 100%; position: static; }
   .about-doc .c-content { padding: 26px; padding-left: 30px; background-image: url(../images/bg-1_sp.png); }
   .about-doc .c-content .c-txt { padding-left: 8px; }

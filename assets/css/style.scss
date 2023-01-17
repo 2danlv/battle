@@ -75,6 +75,9 @@ a {
     src: url(../fonts/QuattrocentoRoman.otf);
     src: url(../fonts/QuattrocentoRoman.ttf), url(../fonts/QuattrocentoRoman.eot?#iefix)
 }
+.hide-pc {
+    display: none;
+}
 body {
     font-family: 'Quattrocento Roman';
     font-size: 15px;
@@ -436,6 +439,12 @@ body {
     }
 }
 @media (max-width:640px) {
+    .hide-sp {
+            display: none;
+        }
+        .hide-pc {
+            display: block;
+        }
     body {
         line-height: 20px;
     }
@@ -492,11 +501,9 @@ body {
         padding: 5vh 15px 0;
         background: none;
 
-        &-img {
-            display: none;
-        }
+         
         .c-ttl img {
-            width: 150px;
+            width: 200px;
         }
         &-doc {
             width: 100%;
