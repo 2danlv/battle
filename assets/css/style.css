@@ -126,6 +126,7 @@ body { font-family: 'Quattrocento Roman'; font-size: 15px; line-height: normal; 
   .hero-list .owl-carousel { padding: 0 15px; }
   .road-map { width: 100%; padding-top: 3vh; }
   .road-map .c-ttl { padding: 10vh 0 0vh; }
+  .road-map .c-ttl img { width: 40%; }
   .road-map .map-ttl { width: 100%; }
   .road-map .c-img.map { display: none; }
   .road-map .group-map { display: block; width: 80%; margin: 0 auto; padding-top: 1vh; }
