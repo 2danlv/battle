@@ -23,10 +23,10 @@ jQuery(document).ready(function($) {
         /* Act on the event */
         $('.modal').removeClass('is-active');
         $('.modal-card').fadeOut(800);
-        $('body').css(
+        $('body').css({
           'overflow': '',
           'height': ''
-          );
+          });
         player.pauseVideo();
     });
     $('a[href*="#"]').on('click', function(e) {
