@@ -132,8 +132,11 @@ a {
         .modal {
             align-items: normal;
             padding-top: 20vh;
+            
             &.is-active {
                 display: block;
+                overflow: hidden;
+                height: 100vh;
             }
             
             .close {
