@@ -102,7 +102,7 @@ a {
             padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
-            pointer-events: none;
+            
         }
 
         .video-wrapper iframe {
@@ -121,6 +121,11 @@ a {
     @media (min-width: 1024px) {
         .modal-card {
             width: 65%;
+            .modal-content {
+                .video-wrapper {
+                    pointer-events: none;
+                }
+            }
         }
     }
     @media (max-width: 640px) {
@@ -130,6 +135,7 @@ a {
             &.is-active {
                 display: block;
             }
+            
             .close {
                 width: 10px;
                 height: 10px;
