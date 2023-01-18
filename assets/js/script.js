@@ -13,14 +13,20 @@ jQuery(document).ready(function($) {
     $('.show-modal').click(function(event) {
         $('.modal').addClass('is-active');
         $('.modal-card').fadeIn(800);
-        $('body,.wrapper').css('overflow', 'hidden');
+        $('body').css({
+          'overflow': 'hidden',
+          'height': '100vh'
+        });
         player.playVideo();
     });
     $('.modal-background, .modal-card .close').click(function(event) {
         /* Act on the event */
         $('.modal').removeClass('is-active');
         $('.modal-card').fadeOut(800);
-        $('body,.wrapper').css('overflow', '');
+        $('body').css(
+          'overflow': '',
+          'height': ''
+          );
         player.pauseVideo();
     });
     $('a[href*="#"]').on('click', function(e) {
