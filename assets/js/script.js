@@ -10,6 +10,19 @@ jQuery(document).ready(function($) {
         }
             //parent_item.find('.c-group-content').slideToggle(800);
         });
+    $('.show-modal').click(function(event) {
+        $('.modal').addClass('is-active');
+        $('.modal-card').fadeIn(800);
+        $('body').css('overflow', 'hidden');
+        player.playVideo();
+    });
+    $('.modal-background, .modal-card .close').click(function(event) {
+        /* Act on the event */
+        $('.modal').removeClass('is-active');
+        $('.modal-card').fadeOut(800);
+        $('body').css('overflow', '');
+        player.pauseVideo();
+    });
     $('a[href*="#"]').on('click', function(e) {
             var j_e = $($(this).attr('href'));
             e.preventDefault();
