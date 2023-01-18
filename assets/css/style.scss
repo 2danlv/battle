@@ -113,7 +113,7 @@ a {
             height: 100%;
         }
      }
-    .modal-card { display: none; padding: 1vh 0; max-width: 80%;  border-radius: 30px; }
+    .modal-card { display: none; margin: 0 auto; padding: 1vh 0; max-width: 80%;  border-radius: 30px; }
     .modal-card-foot,
     .modal-card-head { padding: 10px 20px; position: relative }
     .modal-card-foot { width: 100%; text-align: center;  }
@@ -127,6 +127,9 @@ a {
         .modal {
             align-items: normal;
             padding-top: 20vh;
+            &.is-active {
+                display: block;
+            }
             .close {
                 width: 10px;
                 height: 10px;
